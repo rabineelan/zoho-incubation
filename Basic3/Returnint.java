@@ -1,0 +1,26 @@
+import java.util.*;
+public class Returnint {
+	public static void main(String args[])
+	{
+		int nums[] = {20,20,30,40,50,50,50};
+		System.out.println("Orginal array "+nums.length);
+		System.out.println("Array elements are ");
+		for (int i=0 ; i<nums.length ; i++)
+		{
+		   System.out.println(nums[i]+" ");
+		}
+		   System.out.println("new elements of array "+array_sort(nums));
+	}
+
+		   public static int array_sort(int[]nums)
+		   {
+			   int index =1;
+			   for(int i=1 ; i<nums.length ; i++)
+			   {
+				   if (nums[i] !=nums[index-1])
+					   nums[index++]=nums[i];
+			   }
+			   return index;
+		   }
+	}
+
